@@ -21,7 +21,8 @@
     "lint": "standard --verbose | snazzy",
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
     "fixcode": "standard --fix",
-    "git-hook": "npm run lint -s && npm run test -s"
+    "git-hook": "npm run lint -s && npm run test -s",
+    "json-server": "json-server -c JsonServer/json-server.json JsonServer/db.json --middlewares JsonServer/devScreenIntegration.js"
   },
   "dependencies": {
     "apisauce": "^0.14.2",
@@ -33,9 +34,12 @@
     "ramda": "^0.26.1",
     "react": "16.6.1",
     "react-native": "0.57.7",
+    "react-native-camera": "^2.0.2",
     "react-native-config": "^0.10.0",
     "react-native-device-info": "0.11.0",
+    "react-native-elements": "^1.1.0",
     "react-native-gesture-handler": "1.0.9",
+    "react-native-progress": "3.4.0",
     "react-native-vector-icons": "6.1.0",
     "react-navigation": "3.0.0",
     "react-navigation-redux-helpers": "^2.0.6",
@@ -44,6 +48,7 @@
     "redux-persist": "5.10.0",
     "redux-saga": "^0.16.0",
     "reduxsauce": "0.7.0",
+    "remote-redux-devtools": "0.5.16",
     "seamless-immutable": "^7.1.4"
   },
   "devDependencies": {
@@ -60,11 +65,17 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "ignite-andross": "^3.0.4",
+    "ignite-camera": "^0.0.1",
     "ignite-dev-screens": "2.4.3",
+    "ignite-elements": "^0.3.0",
+    "ignite-json-server": "^0.1.8",
+    "ignite-progress": "^0.0.3",
+    "ignite-redux-devtools": "^0.0.4",
     "ignite-redux-persist": "1.1.2",
     "ignite-standard": "1.0.0",
     "ignite-vector-icons": "1.1.1",
     "jest": "24.5.0",
+    "json-server": "0.9.6",
     "metro-react-native-babel-preset": "0.53.1",
     "mockery": "^2.1.0",
     "react-devtools-core": "3.4.3",

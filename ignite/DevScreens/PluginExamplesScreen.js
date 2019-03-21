@@ -8,6 +8,9 @@ import { Images } from './DevTheme'
 
 // Examples Render Engine
 import ExamplesRegistry from '../../App/Services/ExamplesRegistry'
+import '../Examples/Components/ProgressExample.js'
+import '../Examples/Components/ElementsExample.js'
+import '../Examples/Components/CameraExample.js'
 // animatableExample removed - ignite-animatable not installed
 import '../Examples/Components/vectorExample.js'
 

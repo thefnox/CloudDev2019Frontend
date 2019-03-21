@@ -1,4 +1,6 @@
 export default {
+  useJsonServer: __DEV__ && true,
+  useReduxDevTools: __DEV__,
   showDevScreens: __DEV__,
   useFixtures: false,
   ezLogin: false,
